@@ -1,0 +1,21 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header --}}
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+
+</header>
+
+{{!-- The main content area on the homepage --}}
+<main id="content" class="content" role="main">
+
+  <article class="post">
+      <header class="post-header">
+        <center>
+          <h2 class="post-title">KIRILL ZUBOVSKY</h2>
+          <h3>Entrepreneur. YCombinator Alum. Allergic to bullshit.</h3>
+        </center>
+      </header>
+  </article>
+
+</main>
