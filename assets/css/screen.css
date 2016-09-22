@@ -850,10 +850,14 @@ body.nav-opened .nav {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border-radius: 50px;
     display: block;
-    height: 38px;
+    height: 68px;
     padding: 1px 0 5px 0;
     width: auto;
+    -moz-box-shadow: 2px 3px 15px #c2c2c2;
+    -webkit-box-shadow: 2px 3px 15px #c2c2c2;
+    box-shadow: 2px 3px 15px #c2c2c2;
 }
 
 .menu-button {
