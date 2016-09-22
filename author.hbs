@@ -19,14 +19,24 @@
             <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
         </figure>
         {{/if}}
-        <h1 class="author-title">{{name}}</h1>
+        <h1 class="author-title">Kirill Zubovsky</h1>
         {{#if bio}}
             <h2 class="author-bio">{{bio}}</h2>
         {{/if}}
         <div class="author-meta">
             {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-            <span class="author-link icon-link"><a href="https://twitter.com/kirillzubovsky">@kirillzubovsky</a></span>
             <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+            <br>
+            <div style="clear:both;"></div>
+            <ul class="author-social-profiles">
+              <li><a href='http://kirillzubovsky.com/author/kirill' title='Kirill Zubovsky Blog Posts '>Blog</a></li>
+              <li><a href='http://twitter.com/kirillzubovsky' title='Kirill Zubovsky on Twitter'>Twitter</a></li>
+              <li><a href='https://www.linkedin.com/in/kirillzubovsky' title='Kirill Zubovsky on LinkedIn'>Linkedin</a></li>
+              <li><a href='https://www.producthunt.com/@kirillzubovsky' title='Kirill Zubovsky on Product Hunt'>Product Hunt</a></li>
+              <li><a href='http://instagram.com/kirillzubovsky' title='Kirill Zubovsky on Instagram'>Instagram</a></li>
+              <li><a href='https://creativemarket.com/kirill' title='Kirill Zubovsky on Creative Market'>Creative Market</a></li>
+            </ul>
+            <div style="clear:both;"></div>
         </div>
     </section>
 {{/author}}

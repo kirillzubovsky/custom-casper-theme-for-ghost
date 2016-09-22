@@ -1398,6 +1398,15 @@ body:not(.post-template) .post-title {
     text-decoration: none;
 }
 
+.author-meta ul.author-social-profiles li{
+  display: inline;
+  list-style-type: none;
+}
+
+.author-meta ul.author-social-profiles li:after{
+  content: " | ";
+}
+
 /* Turn off meta for page2+ to make room for extra
    pagination prev/next links */
 .archive-template .author-profile .author-meta {
