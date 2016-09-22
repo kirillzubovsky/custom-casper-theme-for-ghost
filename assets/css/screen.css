@@ -1407,6 +1407,10 @@ body:not(.post-template) .post-title {
   content: " | ";
 }
 
+.author-meta ul.author-social-profiles li:last-child:after{
+  content: none;
+}
+
 /* Turn off meta for page2+ to make room for extra
    pagination prev/next links */
 .archive-template .author-profile .author-meta {
