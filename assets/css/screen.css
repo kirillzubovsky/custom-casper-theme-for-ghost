@@ -115,6 +115,57 @@ td, th{ padding: 0; }
     font-style: normal;
 }
 
+
+/* latin-ext */
+@font-face {
+ font-family: 'Lato';
+ font-style: normal;
+ font-weight: 300;
+ src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v13/IY9HZVvI1cMoAHxvl0w9LVKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+ unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+ font-family: 'Lato';
+ font-style: normal;
+ font-weight: 300;
+ src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v13/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+ font-family: 'Lato';
+ font-style: normal;
+ font-weight: 400;
+ src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/8qcEw_nrk_5HEcCpYdJu8BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+ unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+ font-family: 'Lato';
+ font-style: normal;
+ font-weight: 400;
+ src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+ font-family: 'Lato';
+ font-style: normal;
+ font-weight: 700;
+ src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v13/rZPI2gHXi8zxUjnybc2ZQFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+ unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+ font-family: 'Lato';
+ font-style: normal;
+ font-weight: 700;
+ src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v13/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "casper-icons", "Open Sans", sans-serif;
@@ -211,7 +262,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Halant", sans-serif;
+    font-family: "Lato", sans-serif;
     text-rendering: geometricPrecision;
 }
 
@@ -948,8 +999,8 @@ body.nav-opened .nav {
     margin: 10px 0 10px 0;
     font-size: 5rem;
     letter-spacing: -1px;
-    font-weight: 700;
-    font-family: "Halant", sans-serif;
+    font-weight: 500;
+    font-family: "Lato", "Helvetica", sans-serif;
     color: #fff;
 }
 
@@ -996,8 +1047,8 @@ body.nav-opened .nav {
     position: relative;
     width: 80%;
     max-width: 710px;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
 }
@@ -1020,7 +1071,8 @@ body.nav-opened .nav {
 }
 
 body:not(.post-template) .post-title {
-    font-size: 3.6rem;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 .post-title a {
@@ -1366,12 +1418,13 @@ body:not(.post-template) .post-title {
     width: 120px;
     height: 120px;
     padding: 3px;
-    margin: -100px auto 0 auto;
+    margin: 2rem auto;
     box-shadow: none;
 }
 
 .author-title {
     margin: 1.5rem 0 1rem;
+    font-weight: 500;
 }
 
 .author-bio {
@@ -1798,10 +1851,6 @@ body:not(.post-template) .post-title {
         font-size: 0.95em
     }
 
-    body:not(.post-template) .post-title {
-        font-size: 3.2rem;
-    }
-
     hr {
         margin: 2.4em 0;
     }
@@ -2064,10 +2113,6 @@ body:not(.post-template) .post-title {
         font-size: 1.8rem;
     }
 
-    body:not(.post-template) .post-title {
-        font-size: 2.5rem;
-    }
-
     .post-template .site-footer {
         margin-top: 0;
     }
@@ -2146,7 +2191,7 @@ body:not(.post-template) .post-title {
     }
 
     .author-profile .author-image {
-        margin-top: -70px;
+
     }
 
     .author-profile .author-meta span {
